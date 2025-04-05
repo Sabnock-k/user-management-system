@@ -1,0 +1,9 @@
+<h2>Register</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <input type="email" formControlName="email" placeholder="Email" />
+  <input type="password" formControlName="password" placeholder="Password" />
+  <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+  <button type="submit">Sign Up</button>
+  <div *ngIf="error" style="color: red">{{ error }}</div>
+  <div *ngIf="message" style="color: green">{{ message }}</div>
+</form>
