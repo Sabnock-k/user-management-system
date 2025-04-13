@@ -15,10 +15,10 @@ Once the server is running, open your browser and navigate to `http://localhost:
 # frends
 
 Rafael B. Patiño
-- 8th dwarf ni snow white / Lead Programmer / Project Coordinator / Backend / AKA tig mandar
+- 8th dwarf ni snow white / Lead Programmer / Project Coordinator / Project Manager / Backend / AKA tig mandar
 
 John Ray Tinga
-- airport forehead / Lion sin of pride / Project Manager / Frontend / AKA Vegeta ass hairline kapatid ni Ms Database
+- airport forehead / Lion sin of pride / Frontend / AKA Vegeta ass hairline kapatid ni Ms Database
 
 Damien Cumeran
 - Rizzler / Molester / Programmer / Backend / AKA Utak ng himagsikan
