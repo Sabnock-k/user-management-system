@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { AccountService } from '@app/_services';
+@Component({
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
+    account: any;
 
-@Component({ templateUrl: 'home.component.html' })
-export class HomeComponent {
-    account = this.accountService.accountValue;
+    constructor() { }
 
-    constructor(private accountService: AccountService) { }
+    ngOnInit(): void {
+        // Retrieve user data from localStorage
+        const user = localStorage.getItem('user');
+        if (user) {
+            this.account = JSON.parse(user);
+        } else {
+            // Redirect to login if no user is found
+            window.location.href = '/index.html';
+        }
+    }
 }
