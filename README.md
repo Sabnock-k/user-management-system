@@ -9,7 +9,7 @@ Follow these steps to set up project locally.
 ### 1. Clone the repository. 
 
 ```
-git clone https://github.com/phloxxx/user-management-system.git
+git clone https://github.com/Sabnock-k/user-management-system.git
 ```
 
 ### 2. Install dependencies:
