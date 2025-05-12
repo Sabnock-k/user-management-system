@@ -1,37 +1,21 @@
 {
   "name": "user-management-system",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Integrated User Management System",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "install:frontend": "cd angular-signup-verification-boilerplate && npm install",
+    "install:backend": "cd node-mysql-boilerplate-api && npm install",
+    "install:all": "npm run install:frontend && npm run install:backend",
+    "start:frontend": "cd angular-signup-verification-boilerplate && npm start",
+    "start:backend": "cd node-mysql-boilerplate-api && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
-  "private": true,
   "dependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/compiler": "^19.2.0",
-    "@angular/core": "^19.2.0",
-    "@angular/forms": "^19.2.0",
-    "@angular/platform-browser": "^19.2.0",
-    "@angular/platform-browser-dynamic": "^19.2.0",
-    "@angular/router": "^19.2.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^19.2.0",
-    "@angular/cli": "^19.2.6",
-    "@angular/compiler-cli": "^19.2.0",
-    "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.6.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "concurrently": "^8.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "rootpath": "^0.1.2"
   }
 }
